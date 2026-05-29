@@ -49,7 +49,12 @@ function openDoom() {
       wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
     }).ready((fs, main) => {
       fs.extract("assets/doom.zip").then(() => {
-        main(["-c", "doom.EXE"]);
+       main([
+        "-c",
+        "cd DOOM",
+        "-c",
+        "DOOM.EXE"
+]);
     });
     });
   }
