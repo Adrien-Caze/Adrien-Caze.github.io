@@ -52,7 +52,7 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form action="https://formspree.io/f/xvgdkbgb" method="POST">
+                                <form action="php/contact.php" method="POST">
     <div class="form-floating mb-3">
         <input class="form-control" name="name" type="text" placeholder="Nom" required>
         <label>Nom Complet</label>
@@ -64,8 +64,13 @@
     </div>
 
     <div class="form-floating mb-3">
-        <input class="form-control" name="phone" type="text" placeholder="Téléphone" required>
+        <input class="form-control" name="phone" type="number" placeholder="Téléphone" required>
         <label>Numéro de téléphone</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <textarea class="form-control" name="subject" placeholder="Sujet" required></textarea>
+        <label>Sujet</label>
     </div>
 
     <div class="form-floating mb-3">
@@ -95,10 +100,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
